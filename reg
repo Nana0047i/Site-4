@@ -1,0 +1,38 @@
+<html>
+<head>
+ <title> Регистрация на курс </title>
+</head>
+<body>
+<h1> Регистрация на курс </h1>
+<form action="/submit" method="post"> <!-- Form отвечает за форму заполнения реквизитов  -->
+  <p>
+    <label for="name">Ваше имя:</label> <!--Label название для элемента формы -->
+  <input type="text" id="name" name="name" placeholder="Введите ваше имя" required> <!-- required отвечает за требование выполнения в поле input  -->
+</p>
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" placeholder="Введите ваш Email" required>
+<p>
+  <label for="number">Ваш номер :</label>
+ <input type="tel" id ="tel" name="tel" placeholder="7 900 000 00 00" required>
+</p>
+<p> 
+  <label for="option"> Выберите курс: </label>
+<select> id="topic" name="Тема в выпадающем списке" required> <!-- Выпадающий список -->
+	<option> Курс по обучению ИИ   </option> <!--варианты в списке -->
+	<option> Курс по программированию на С++ </option>
+	<option> Курс по языковедению  </option>
+	<option> Курс лингвистики </option>
+</select> 
+</p>
+	<label for="comment"> Комментарий: </label>
+<textarea>Напишите свой отзыв!  </textarea> 
+ <p>
+ <label>
+   <input type = "checkbox"> Я согласен получать рассылку
+ </label>
+</p>
+ 
+  <button type="submit">Отправить</button>
+</form>
+</body>
+</html>
